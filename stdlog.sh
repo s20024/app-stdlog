@@ -8,7 +8,7 @@ mkdir -p ~/.stdlog
 cd ~/.stdlog
 
 # アプリケーションの説明の表示
-# eog 1.png 
+# eog 1.png  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #githubからshellscriptのダウンロード
 git clone --depth 1 https://github.com/s20024/stdlog.git
@@ -18,7 +18,7 @@ mv stdlog/* .
 rm -rf stdlog README.md
 
 # 必要なファイルの作成
-touch stdlog_breaktime stdlog_breaktime
+touch stdlog_breaktime stdlog_in
 
 #　ホームディレクトリにstdlogディレクトリの作成＆移動
 cd ~/
