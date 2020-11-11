@@ -35,9 +35,9 @@ if [ "$judge" = "y" ]; then
 
     #　.bashrcに記入（開いたときに読み込まれるから次回からaliasを打たなくていい）
     echo "
-    alias in=\". ~/.stdlog/in.sh\"
-    alias out=\". ~/.stdlog/out.sh\"
-    alias breaktime=\". ~/.stdlog/breaktime.sh\"
+alias in=\". ~/.stdlog/in.sh\"
+alias out=\". ~/.stdlog/out.sh\"
+alias breaktime=\". ~/.stdlog/breaktime.sh\"
     " >> ~/.bashrc
 
     #　一応.bashrc の再読込
