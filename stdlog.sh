@@ -7,12 +7,18 @@ path=`pwd`
 mkdir -p ~/.stdlog
 cd ~/.stdlog
 
+# アプリケーションの説明の表示
+# eog 1.png 
+
 #githubからshellscriptのダウンロード
 git clone --depth 1 https://github.com/s20024/stdlog.git
 # ダウンロードしたものを移動
 mv stdlog/* .
 #　いらないディレクトリとREADME.mdの削除
 rm -rf stdlog README.md
+
+# 必要なファイルの作成
+touch stdlog_breaktime stdlog_breaktime
 
 #　ホームディレクトリにstdlogディレクトリの作成＆移動
 cd ~/
@@ -35,5 +41,6 @@ alias breaktime=\". ~/.stdlog/breaktime.sh\"
 #　最初にいた位置に帰宅ｗ
 cd $path
 
-#　必要なくなったこのファイルの削除
-rm std.sh
+#　必要なくなったこのディレクトリの削除
+cd .. 
+rm -rf app-stdlog
