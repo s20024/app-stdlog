@@ -39,9 +39,16 @@ if [ "$judge" = "y" ]; then
     cd ~/
     mkdir -p stdlog
     cd stdlog
+
+    today=
     #　data.csvの作成＆最初の記入
     touch data.csv 
     echo "year_month_day,study_time_hour,study_time_minute" > data.csv
+
+    # 今日のデータの入力（一応）
+    today=`date "+%y:%m:%d"`
+    echo "$today,0,0" >> data.csv
+
 
     #　.bashrcに記入（開いたときに読み込まれるから次回からaliasを打たなくていい）
     echo "
@@ -58,5 +65,5 @@ alias breaktime=\". ~/.stdlog/breaktime.sh\"
 
     #　必要なくなったこのディレクトリの削除
     cd .. 
-    rm -rf app-stdlog
+    # rm -rf app-stdlog
 fi
