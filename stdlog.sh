@@ -46,7 +46,6 @@ if [ "$judge" = "y" ]; then
     mkdir -p stdlog
     cd stdlog
 
-    today=
     #　data.csvの作成＆最初の記入
     touch data.csv 
     echo "year_month_day,study_time_hour,study_time_minute" > data.csv
