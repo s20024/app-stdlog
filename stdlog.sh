@@ -21,6 +21,9 @@ read -p "実行してよろしいですか？  yes(y)/no(n):" judge
 
 if [ "$judge" = "y" ]; then
 
+    # 今日のデータの取得]
+    today=`date "+%y:%m:%d"`
+
     #　ホームディレクトリの下に隠しディレクトリの作成＆移動
     mkdir -p ~/.stdlog
     cd ~/.stdlog
@@ -35,6 +38,9 @@ if [ "$judge" = "y" ]; then
     # 必要なファイルの作成
     touch stdlog_breaktime stdlog_in
 
+    # todayファイルの作成
+    echo "$today" > stdlog_today
+
     #　ホームディレクトリにstdlogディレクトリの作成＆移動
     cd ~/
     mkdir -p stdlog
@@ -46,8 +52,8 @@ if [ "$judge" = "y" ]; then
     echo "year_month_day,study_time_hour,study_time_minute" > data.csv
 
     # 今日のデータの入力（一応）
-    today=`date "+%y:%m:%d"`
     echo "$today,0,0" >> data.csv
+
 
 
     #　.bashrcに記入（開いたときに読み込まれるから次回からaliasを打たなくていい）
