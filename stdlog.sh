@@ -70,5 +70,5 @@ alias breaktime=\". ~/.stdlog/breaktime.sh\"
 
     #　必要なくなったこのディレクトリの削除
     cd .. 
-    # rm -rf app-stdlog
+    rm -rf app-stdlog
 fi
