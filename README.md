@@ -24,4 +24,3 @@
 #### **責任は取れません**(・_・;)(・_・;)
 
 
-![ツインエビフライ](https://stamp.archsted.com/storage/stamps/jnzFfrvEmosS8bHNtGDUNR3zd4QteDokSF6z5N0O.jpeg "sample")
